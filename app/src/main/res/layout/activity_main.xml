@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimarylight"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/llName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:text="Enter your name :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:hint="Please enter your name"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llName"
+        android:orientation="horizontal"
+        android:textStyle="bold"
+        android:padding="6dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:text="Enter your Age :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/edtAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:inputType="number"
+            android:hint="Please enter your Age"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llAge"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:text="Enter your Mobile :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/edtMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:inputType="number"
+            android:hint="Please enter your Mobile"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llMobile"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:padding="6dp"
+            android:textStyle="bold"
+            android:text="Enter your Email :"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:inputType="textEmailAddress"
+            android:hint="Please enter your Email"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_margin="6dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Done"
+        android:id="@+id/btnNext"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>
